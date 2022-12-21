@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Random Number Generator</title>
+</head>
+<body>
+  <button id="random-button">Generate Random Number</button>
+  <p id="output"></p>
+
+  <script>
+    const button = document.getElementById("random-button");
+    const output = document.getElementById("output");
+
+    button.addEventListener("click", () => {
+      const randomNumber = Math.floor(Math.random() * 100) + 1;
+      output.innerHTML = `Your random number is: ${randomNumber}`;
+    });
+  </script>
+</body>
+</html>
+
